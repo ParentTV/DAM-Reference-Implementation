@@ -1,0 +1,127 @@
+/**
+ * @file This is a suggested styling for video assets accessed via ParentTV's Digital Asset Manager.
+ * @copyright ParentTV 2022
+ * @author Jack Butler <jbutler@parenttv.com>
+ * @version 1.1.0
+ */
+.daniel-main-container {
+    position: relative;
+}
+.empty {
+    display: none;
+}
+.daniel-container {
+    height: 80vh;
+    overflow-y: auto;
+}
+.pbwm {
+    width: 100px;
+    float: right;
+}
+.daniel-player-window {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+}
+.daniel-player-container,
+.daniel-player-window div {
+    max-width: 960px;
+    margin: auto;
+}
+.daniel-player-window iframe {
+    width: 100%;
+}
+.daniel-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.daniel-group-link {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    display: block;
+    flex: 1;
+    cursor: pointer;
+}
+
+.daniel-topic-container {
+    font-family: inherit;
+    padding-bottom: 60px;
+}
+
+.daniel-topic-container h2 {
+    text-transform: uppercase;
+}
+
+.daniel-video-list {
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+    padding-top: 1.5rem;
+    position: relative;
+    border-bottom: solid 1px #ddd;
+}
+
+.daniel-video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+    padding-top: 1.5rem;
+    height: 85vh;
+    overflow-y: auto;
+
+}
+
+.daniel-summary-item {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 304px;
+    flex: 0 0 auto;
+    position: relative;
+    transition: all .2s ease-in-out 0s;
+    cursor: pointer;
+
+}
+
+.daniel-summary-item-meta {
+    margin-top: 1.5rem;
+    height: 192px;
+    overflow: hidden;
+    padding-right: 2rem;
+    white-space: normal;
+    width: 100%;
+}
+
+.daniel-summary-item-meta:after {
+    background: linear-gradient(180deg,transparent 0,#fff);
+    bottom: 0;
+    content: "";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff",endColorstr="#ffffff",GradientType=0);
+    height: 6rem;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+.daniel-summary-item h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 8px;
+}
+
+.daniel-summary-item .thumbnail-image {
+    background-size: cover;
+    border-radius: 0.25rem;
+    height: 10.5rem;
+}
